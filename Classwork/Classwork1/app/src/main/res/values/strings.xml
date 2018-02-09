@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Classwork1</string>
+    <string name="app_name_second">Classwork2</string>
+    <string name="intent_cw2">Intent test</string>
+</resources>
