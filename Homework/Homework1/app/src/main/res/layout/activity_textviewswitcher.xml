@@ -28,8 +28,16 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="85dp"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:text="Click Me" />
+
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:text="Back" />
 
 
 </LinearLayout>

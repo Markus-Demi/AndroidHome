@@ -1,4 +1,14 @@
 <resources>
-    <string name="app_name">Homework1</string>
+    <string name="app_name">Homework</string>
     <string name="test">I\'m just a little string</string>
+    <string name="hw_info">Choose homework wisely</string>
+    <string name="button_hw1">Homework 1</string>
+    <string name="button_hw2">Homework 2</string>
+    <string name="austria">Austria</string>
+    <string name="poland">Poland</string>
+    <string name="Italy">Italy</string>
+    <string name="columbia">Columbia</string>
+    <string name="madagascar">Madagascar</string>
+    <string name="thailand">Thailand</string>
+    <string name="denmark">Denmark</string>
 </resources>

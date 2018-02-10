@@ -1,4 +1,4 @@
-package com.gmail.demidovich.homework1;
+package com.gmail.demidovich.homework1.hw1;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,11 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import com.gmail.demidovich.homework1.R;
+
+public class TextViewSwitcherActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView mTextView1;
     private TextView mTextView2;
     private Button mButton;
+    private Button mButtonBack;
     private View.OnClickListener mClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_textviewswitcher);
 
         mTextView1 = findViewById(R.id.textview1);
         mTextView2 = findViewById(R.id.textview2);
@@ -42,6 +45,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // 3 way:
         // mButton.setOnClickListener(this);
+
+        mButtonBack = findViewById(R.id.button_back);
+        mButtonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     private void textSwapper() {
