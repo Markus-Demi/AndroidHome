@@ -143,6 +143,7 @@
             android:text="@string/madagascar"
             android:textColor="#fff"
             android:textSize="16sp" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="75dp"
@@ -166,6 +167,7 @@
             android:text="@string/thailand"
             android:textColor="#fff"
             android:textSize="16sp" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="20dp"
@@ -214,6 +216,67 @@
             android:textColor="#fff"
             android:textSize="16sp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="300">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="105"
+                android:background="#d21010" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="130"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="65"
+                android:background="#d21010" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#fff"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="300">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="105"
+                android:background="#d21010" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="130"
+                android:background="#fff" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="65"
+                android:background="#d21010" />
+
+        </LinearLayout>
 
 
     </LinearLayout>
