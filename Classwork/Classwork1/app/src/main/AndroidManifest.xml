@@ -9,7 +9,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".Classwork1Activity"
+        <activity
+            android:name=".Classwork1Activity"
             android:screenOrientation="fullSensor"> <!-- noHistory is for logo -->
             <intent-filter>
                 <action android:name="android.content.action.MAIN" />
@@ -17,7 +18,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".classwork2.Classwork2Activity"
-            android:parentActivityName=".Classwork1Activity"></activity>
+        <activity
+            android:name=".classwork2.Classwork2Activity"
+            android:parentActivityName=".Classwork1Activity" />
+        <activity
+            android:name=".classwork3.Classwork3Activity"
+            android:parentActivityName=".Classwork1Activity" />
     </application>
 </manifest>

@@ -12,12 +12,14 @@ import android.widget.Toast;
 
 import com.gmail.demidovich.classwork1.classwork2.Classwork2Activity;
 import com.gmail.demidovich.classwork1.classwork2.Singleton;
+import com.gmail.demidovich.classwork1.classwork3.Classwork3Activity;
 
 public class Classwork1Activity extends AppCompatActivity {
 
     private static final String TAG = Classwork1Activity.class.getCanonicalName();
     private Button button;
     private Button mButtonActivityChanger;
+    private Button mButtonClassWork3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class Classwork1Activity extends AppCompatActivity {
                 toast.show();
             }
         });
+        button.setText(BuildConfig.API_URL);
 
         mButtonActivityChanger = findViewById(R.id.button2);
         mButtonActivityChanger.setOnClickListener(new View.OnClickListener() {
@@ -46,10 +49,19 @@ public class Classwork1Activity extends AppCompatActivity {
 
                 Intent intent = new Intent(Classwork1Activity.this,
                         Classwork2Activity.class);
-                intent.putExtra(Classwork2Activity.KEY_TEXT, "putExtraaaaaaaaaa");
                 startActivity(intent);
                 //finish(); // its like noHistory attribute but not
                 // onPause() -> onStop -> onDestroy()
+            }
+        });
+
+        mButtonClassWork3 = findViewById(R.id.button_cw3);
+        mButtonClassWork3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Classwork1Activity.this,
+                        Classwork3Activity.class);
+                startActivity(intent);
             }
         });
     }
