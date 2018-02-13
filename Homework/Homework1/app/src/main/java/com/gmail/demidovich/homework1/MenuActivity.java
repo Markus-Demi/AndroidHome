@@ -9,10 +9,12 @@ import android.widget.Button;
 
 import com.gmail.demidovich.homework1.hw1.TextViewSwitcherActivity;
 import com.gmail.demidovich.homework1.hw2.FlagsActivity;
+import com.gmail.demidovich.homework1.hw3.ImagesAndGradleActivity;
 
 public class MenuActivity extends AppCompatActivity {
     private Button mButtonHW1;
     private Button mButtonHW2;
+    private Button mButtonHW3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ public class MenuActivity extends AppCompatActivity {
 
         mButtonHW1 = findViewById(R.id.button_hw1);
         mButtonHW2 = findViewById(R.id.button_hw2);
+        mButtonHW3 = findViewById(R.id.button_hw3);
 
         mButtonHW1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +38,14 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(MenuActivity.this,
                         FlagsActivity.class));
+            }
+        });
+
+        mButtonHW3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this,
+                        ImagesAndGradleActivity.class));
             }
         });
     }

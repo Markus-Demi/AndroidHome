@@ -8,21 +8,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="top|center"
-        android:textSize="24dp"
+        android:text="@string/hw_info"
         android:textColor="#000000"
-        android:text="@string/hw_info" />
+        android:textSize="24sp" />
 
 
     <Button
         android:id="@+id/button_hw1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_hw1" />
+        android:layout_margin="5dp"
+        android:text="@string/button_hw1"
+        android:textColor="#000000" />
 
     <Button
         android:id="@+id/button_hw2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:text="@string/button_hw2" />
+
+    <Button
+        android:id="@+id/button_hw3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/button_hw3"
+        android:textColor="#000000" />
 
 </LinearLayout>

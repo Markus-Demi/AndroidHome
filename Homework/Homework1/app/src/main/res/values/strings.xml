@@ -11,4 +11,7 @@
     <string name="madagascar">Madagascar</string>
     <string name="thailand">Thailand</string>
     <string name="denmark">Denmark</string>
+    <string name="download_button">Download</string>
+    <string name="ref_hint">Insert reference here</string>
+    <string name="button_hw3">Homework 3</string>
 </resources>
