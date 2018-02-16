@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--
+       this is for MyCustomView:
+
+       <com.gmail.demidovich.classwork1.classwork4.MyCustomView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+           -->
+
+    <Button
+        android:id="@+id/button_cw4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_selector"
+        android:text="selector"
+        android:textColor="@color/button_text_color" />
+
+</FrameLayout>

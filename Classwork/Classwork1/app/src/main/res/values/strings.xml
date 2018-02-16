@@ -2,4 +2,6 @@
     <string name="app_name">Classwork1</string>
     <string name="app_name_second">Classwork2</string>
     <string name="intent_cw2">Intent test</string>
+    <string name="button1">Button1 Test</string>
+    <string name="button2">Button2 Test</string>
 </resources>

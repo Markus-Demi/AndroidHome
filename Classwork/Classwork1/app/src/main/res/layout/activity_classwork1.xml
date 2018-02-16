@@ -41,5 +41,20 @@
             android:padding="15dp"
             android:text="Classwork2" />
 
+        <Button
+            android:id="@+id/button_cw3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="classwork3" />
+
+
     </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_cw4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="classwork4" />
+
 </LinearLayout>

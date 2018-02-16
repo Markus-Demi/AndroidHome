@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.gmail.demidovich.classwork1.classwork2.Classwork2Activity;
 import com.gmail.demidovich.classwork1.classwork2.Singleton;
 import com.gmail.demidovich.classwork1.classwork3.Classwork3Activity;
+import com.gmail.demidovich.classwork1.classwork4.Classwork4Activity;
 
 public class Classwork1Activity extends AppCompatActivity {
 
@@ -20,6 +21,7 @@ public class Classwork1Activity extends AppCompatActivity {
     private Button button;
     private Button mButtonActivityChanger;
     private Button mButtonClassWork3;
+    private Button mButtonClasswork4;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -61,6 +63,16 @@ public class Classwork1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Classwork1Activity.this,
                         Classwork3Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        mButtonClasswork4 = findViewById(R.id.button_cw4);
+        mButtonClasswork4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Classwork1Activity.this,
+                        Classwork4Activity.class);
                 startActivity(intent);
             }
         });
