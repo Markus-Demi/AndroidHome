@@ -20,6 +20,7 @@
         <activity android:name=".hw1.TextViewSwitcherActivity" />
         <activity android:name=".hw2.FlagsActivity" />
         <activity android:name=".hw3.ImagesAndGradleActivity" />
+        <activity android:name=".hw4.MyAnimationActivity" />
 
     </application>
 </manifest>
