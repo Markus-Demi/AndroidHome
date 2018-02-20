@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gmail.demidovich.classwork1">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -28,5 +30,20 @@
         <activity
             android:name=".classwork4.Classwork4Activity"
             android:parentActivityName=".Classwork1Activity" />
+
+        <activity
+            android:name=".classwork5.Classwork5Activity"
+            android:parentActivityName=".Classwork1Activity" />
+
+        <receiver android:name=".classwork5.MyReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".classwork5.MyService" />
+
+        <service android:name=".classwork5.MyIntentService" />
+
     </application>
 </manifest>
