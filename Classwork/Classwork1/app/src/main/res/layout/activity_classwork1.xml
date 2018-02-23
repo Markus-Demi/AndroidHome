@@ -63,4 +63,10 @@
         android:layout_height="wrap_content"
         android:text="classwork5" />
 
+    <Button
+        android:id="@+id/button_cw6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="classwork 6" />
+
 </LinearLayout>

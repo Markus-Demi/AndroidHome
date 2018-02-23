@@ -15,6 +15,7 @@ import com.gmail.demidovich.classwork1.classwork2.Singleton;
 import com.gmail.demidovich.classwork1.classwork3.Classwork3Activity;
 import com.gmail.demidovich.classwork1.classwork4.Classwork4Activity;
 import com.gmail.demidovich.classwork1.classwork5.Classwork5Activity;
+import com.gmail.demidovich.classwork1.classwork6.Classwork6Activity;
 
 public class Classwork1Activity extends AppCompatActivity {
 
@@ -24,6 +25,7 @@ public class Classwork1Activity extends AppCompatActivity {
     private Button mButtonClassWork3;
     private Button mButtonClasswork4;
     private Button mButtonClasswork5;
+    private Button mButtonClasswork6;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -85,6 +87,16 @@ public class Classwork1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Classwork1Activity.this,
                         Classwork5Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        mButtonClasswork6 = findViewById(R.id.button_cw6);
+        mButtonClasswork6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Classwork1Activity.this,
+                        Classwork6Activity.class);
                 startActivity(intent);
             }
         });
