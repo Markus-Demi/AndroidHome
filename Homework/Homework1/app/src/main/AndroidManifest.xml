@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gmail.demidovich.homework1">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -21,6 +22,14 @@
         <activity android:name=".hw2.FlagsActivity" />
         <activity android:name=".hw3.ImagesAndGradleActivity" />
         <activity android:name=".hw4.MyAnimationActivity" />
+        <activity android:name=".hw4.AnalogClockActivity" />
+        <activity android:name=".hw5.BroadcastReceiverAndServiceActivity" />
+
+        <receiver android:name=".hw5.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGED" />
+            </intent-filter>
+        </receiver>
 
     </application>
 </manifest>

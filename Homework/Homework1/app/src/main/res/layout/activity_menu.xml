@@ -43,4 +43,18 @@
         android:layout_margin="5dp"
         android:text="@string/button_hw4" />
 
+    <Button
+        android:id="@+id/clock_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="homework 4 clock" />
+
+    <Button
+        android:id="@+id/button_hw5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/button_hw5" />
+
 </LinearLayout>
