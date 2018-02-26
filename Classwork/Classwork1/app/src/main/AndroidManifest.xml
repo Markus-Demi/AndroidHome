@@ -49,5 +49,10 @@
             android:name=".classwork6.Classwork6Activity"
             android:parentActivityName=".Classwork1Activity" />
 
+
+        <activity
+            android:name=".classwork7.Classwork7Activity"
+            android:parentActivityName=".Classwork1Activity" />
+
     </application>
 </manifest>
