@@ -17,4 +17,6 @@
     <string name="button_hw4">Homework 4</string>
     <string name="button_hw5">Homework 5</string>
     <string name="button_wi_fi_receiver">wi-fi status</string>
+    <string name="turn_off_wi_fi">Turn off WiFi</string>
+    <string name="turn_on_wi_fi">Turn on WiFi</string>
 </resources>

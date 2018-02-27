@@ -11,4 +11,9 @@
         android:layout_gravity="center"
         android:text="@string/button_wi_fi_receiver" />
 
+    <ImageView
+        android:id="@+id/wifi_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>
