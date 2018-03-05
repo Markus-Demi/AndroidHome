@@ -15,7 +15,9 @@
     <string name="ref_hint">Insert reference here</string>
     <string name="button_hw3">Homework 3</string>
     <string name="button_hw4">Homework 4</string>
+    <string name="button_hw4_clock">Homework 4 clock</string>
     <string name="button_hw5">Homework 5</string>
+    <string name="button_hw6">Homework 6</string>
     <string name="button_wi_fi_receiver">wi-fi status</string>
     <string name="turn_off_wi_fi">Turn off WiFi</string>
     <string name="turn_on_wi_fi">Turn on WiFi</string>

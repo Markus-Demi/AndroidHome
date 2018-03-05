@@ -26,6 +26,7 @@
         <activity android:name=".hw4.MyAnimationActivity" />
         <activity android:name=".hw4.AnalogClockActivity" />
         <activity android:name=".hw5.BroadcastReceiverAndServiceActivity" />
+        <activity android:name=".hw6.ParserActivity" />
 
         <service
             android:name=".hw5.MyService"

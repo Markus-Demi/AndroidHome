@@ -13,6 +13,7 @@ import com.gmail.demidovich.homework1.hw3.ImagesAndGradleActivity;
 import com.gmail.demidovich.homework1.hw4.AnalogClockActivity;
 import com.gmail.demidovich.homework1.hw4.MyAnimationActivity;
 import com.gmail.demidovich.homework1.hw5.BroadcastReceiverAndServiceActivity;
+import com.gmail.demidovich.homework1.hw6.ParserActivity;
 
 public class MenuActivity extends AppCompatActivity {
     private Button mButtonHW1;
@@ -21,6 +22,7 @@ public class MenuActivity extends AppCompatActivity {
     private Button mButtonHW4;
     private Button mButtonClock;
     private Button mButtonHW5;
+    private Button mButtonHW6;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class MenuActivity extends AppCompatActivity {
         mButtonHW4 = findViewById(R.id.button_hw4);
         mButtonClock = findViewById(R.id.clock_button);
         mButtonHW5 = findViewById(R.id.button_hw5);
+        mButtonHW6 = findViewById(R.id.button_hw6);
 
         mButtonHW1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +83,14 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(MenuActivity.this,
                         BroadcastReceiverAndServiceActivity.class));
+            }
+        });
+
+        mButtonHW6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this,
+                        ParserActivity.class));
             }
         });
     }
