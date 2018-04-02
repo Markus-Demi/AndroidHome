@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.gmail.demidovich.classwork1"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    def dependency = rootProject.ext.dependencies
+
+    implementation dependency.supportAppCompact
+    implementation dependency.supportv4
+    implementation dependency.supportdesign
+
+    implementation dependency.archComponentsExtensions
+    annotationProcessor dependency.archComponentsCompiler
+
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    annotationProcessor dependency.androidBindingCompiler
+
+    implementation dependency.dagger
+    annotationProcessor dependency.daggerCompiler
+
+    implementation dependency.rxandroid
+
+    implementation dependency.picasso
+    implementation dependency.glide
+
+
+    implementation dependency.gson
+    api project(path: ':domain')
+    api project(path: ':data')
+}
